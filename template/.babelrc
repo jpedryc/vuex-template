@@ -8,7 +8,12 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-runtime"],
+  "plugins": ["transform-runtime"{{#alacarte}}, ["transform-imports", {
+    "vuetify": {
+      "transform": "vuetify/es5/components/${member}",
+      "preventFullImport": true
+    }
+  }]{{/alacarte}}],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],

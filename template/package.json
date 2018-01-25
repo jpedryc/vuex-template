@@ -14,6 +14,7 @@
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
   },
   "dependencies": {
+    "vuetify": "^0.17.6",
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}
   },
@@ -25,6 +26,9 @@
     "babel-eslint": "^8.0.1",
     {{/lint}}
     "babel-loader": "^7.1.2",
+    {{#alacarte}}
+    "babel-plugin-transform-imports": "^1.4.1",
+    {{/alacarte}}
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
@@ -86,6 +90,10 @@
     {{/e2e}}
     "semver": "^5.4.1",
     "shelljs": "^0.7.8",
+    {{#alacarte}}
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    {{/alacarte}}
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.3.0",

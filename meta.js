@@ -82,7 +82,17 @@ module.exports = {
     "e2e": {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
-    }
+    },
+    alacarte: {
+       type: "confirm",
+       message: "Use a-la-carte components?",
+       default: false
+    },
+    theme: {
+      type: "confirm",
+      message: "Use custom theme?",
+      default: false
+    },
   },
   "filters": {
     ".eslintrc.js": "lint",
