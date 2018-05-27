@@ -4,6 +4,12 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
+import { sync } from 'vuex-router-sync'
+import router from './router'
+import store from './store'
+import theme from './assets/theme'
+import config from './config'
+
 {{#router}}
 import router from './router'
 {{/router}}

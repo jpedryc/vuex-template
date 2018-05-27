@@ -1,4 +1,4 @@
-# {{ name }}
+# vue-pwa-boilerplate (+ vuex - [*YoungLionsGroup*](http://younglions.pl/) fork)
 
 > {{ description }}
 
