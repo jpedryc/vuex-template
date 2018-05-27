@@ -1,4 +1,4 @@
-# vue-pwa-boilerplate
+# vue-pwa-boilerplate (+ vuex - [*YoungLionsGroup*](http://younglions.pl/) fork)
 
 > A full-featured [PWA](https://developers.google.com/web/progressive-web-apps/) template with webpack, hot-reload, lint-on-save, unit testing & css extraction.
 
