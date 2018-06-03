@@ -5,7 +5,6 @@
 import Vue from 'vue'
 import App from './App'
 import { sync } from 'vuex-router-sync'
-import router from './router'
 import store from './store'
 import theme from './assets/theme'
 import config from './config'
@@ -65,11 +64,14 @@ Vue.use(Vuetify{{#theme}}, { theme: {
 }}{{/theme}})
 {{/alacarte}}
 
+sync(store, router)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store: store,
   {{#router}}
   router,
   {{/router}}
