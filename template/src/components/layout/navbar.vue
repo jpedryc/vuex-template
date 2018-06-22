@@ -18,17 +18,53 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
 
   export default {
+    methods: {
+      ...mapActions({
+        updateClipped: 'layout/updateClipped',
+        updateDrawer: 'layout/updateDrawer',
+        updateMinivariant: 'layout/updateMinivariant',
+        updateFixedprop: 'layout/updateFixedprop'
+      })
+    },
     computed: {
       ...mapGetters({
-        clipped: 'layout/clipped',
-        drawer: 'layout/drawer',
-        miniVariant: 'layout/miniVariant',
-        fixedProp: 'layout/fixedProp',
-        title: 'layout/title',
-      })
+        title: 'layout/title'
+      }),
+      clipped: {
+        get() {
+          return this.$store.state.layout.clipped;
+        },
+        set(value) {
+          this.updateClipped(value)
+        }
+      },
+      drawer: {
+        get() {
+          return this.$store.state.layout.drawer;
+        },
+        set(value) {
+          this.updateDrawer(value)
+        }
+      },
+      miniVariant: {
+        get() {
+          return this.$store.state.layout.miniVariant;
+        },
+        set(value) {
+          this.updateMinivariant(value)
+        }
+      },
+      fixedProp: {
+        get() {
+          return this.$store.state.layout.fixedProp;
+        },
+        set(value) {
+          this.updateFixedprop(value)
+        }
+      }
     }
   }
 </script>

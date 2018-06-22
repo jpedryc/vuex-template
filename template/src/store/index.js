@@ -17,5 +17,5 @@ export default store
 Vue.use(
   Vuex,
   store,
-  strict,
+  strict
 )
