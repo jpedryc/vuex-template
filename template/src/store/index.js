@@ -10,7 +10,7 @@ const store = new Vuex.Store({
   strict,
   modules: {
     layout
-  },
+  }
 })
 export default store
 

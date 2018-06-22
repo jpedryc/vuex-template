@@ -34,34 +34,34 @@
         title: 'layout/title'
       }),
       clipped: {
-        get() {
-          return this.$store.state.layout.clipped;
+        get () {
+          return this.$store.state.layout.clipped
         },
-        set(value) {
+        set (value) {
           this.updateClipped(value)
         }
       },
       drawer: {
-        get() {
-          return this.$store.state.layout.drawer;
+        get () {
+          return this.$store.state.layout.drawer
         },
-        set(value) {
+        set (value) {
           this.updateDrawer(value)
         }
       },
       miniVariant: {
-        get() {
-          return this.$store.state.layout.miniVariant;
+        get () {
+          return this.$store.state.layout.miniVariant
         },
-        set(value) {
+        set (value) {
           this.updateMinivariant(value)
         }
       },
       fixedProp: {
-        get() {
-          return this.$store.state.layout.fixedProp;
+        get () {
+          return this.$store.state.layout.fixedProp
         },
-        set(value) {
+        set (value) {
           this.updateFixedprop(value)
         }
       }

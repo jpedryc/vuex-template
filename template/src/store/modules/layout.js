@@ -15,12 +15,12 @@ const layoutStore = {
       {
         icon: 'settings',
         title: 'Dashboard',
-        url: '/',
+        url: '/'
       },
       {
         icon: 'arrow_right',
         title: 'Menu item',
-        url: '/menu-item',
+        url: '/menu-item'
       }
     ]
   },
@@ -30,19 +30,19 @@ const layoutStore = {
     fixedProp: state => state.fixedProp,
     miniVariant: state => state.miniVariant,
     menuItems: state => state.menuItems,
-    title: state => state.title,
+    title: state => state.title
   },
   actions: {
-    updateDrawer({ dispatch }, value) {
+    updateDrawer ({ dispatch }, value) {
       dispatch(UPDATE_DRAWER, value)
     },
-    updateMinivariant({ dispatch }, value) {
+    updateMinivariant ({ dispatch }, value) {
       dispatch(UPDATE_MINIVARIANT, value)
     },
-    updateClipped({ dispatch }, value) {
+    updateClipped ({ dispatch }, value) {
       dispatch(UPDATE_CLIPPED, value)
     },
-    updateFixedprop({ dispatch }, value) {
+    updateFixedprop ({ dispatch }, value) {
       dispatch(UPDATE_FIXEDPROP, value)
     }
   },
