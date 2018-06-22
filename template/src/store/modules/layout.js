@@ -47,22 +47,22 @@ const layoutStore = {
     }
   },
   mutations: {
-    UPDATE_DRAWER: (state, value) => {
+    [UPDATE_DRAWER]: (state, value) => {
       if (value !== undefined) {
         state.drawer = value
       }
     },
-    UPDATE_MINIVARIANT: (state, value) => {
+    [UPDATE_MINIVARIANT]: (state, value) => {
       if (value !== undefined) {
         state.miniVariant = value
       }
     },
-    UPDATE_CLIPPED: (state, value) => {
+    [UPDATE_CLIPPED]: (state, value) => {
       if (value !== undefined) {
         state.clipped = value
       }
     },
-    UPDATE_FIXEDPROP: (state, value) => {
+    [UPDATE_FIXEDPROP]: (state, value) => {
       if (value !== undefined) {
         state.fixedProp = value
       }
