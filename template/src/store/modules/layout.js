@@ -33,36 +33,36 @@ const layoutStore = {
     title: state => state.title
   },
   actions: {
-    updateDrawer ({ dispatch }, value) {
-      dispatch(UPDATE_DRAWER, value)
+    updateDrawer ({ commit }, value) {
+      commit(UPDATE_DRAWER, value)
     },
-    updateMinivariant ({ dispatch }, value) {
-      dispatch(UPDATE_MINIVARIANT, value)
+    updateMinivariant ({ commit }, value) {
+      commit(UPDATE_MINIVARIANT, value)
     },
-    updateClipped ({ dispatch }, value) {
-      dispatch(UPDATE_CLIPPED, value)
+    updateClipped ({ commit }, value) {
+      commit(UPDATE_CLIPPED, value)
     },
-    updateFixedprop ({ dispatch }, value) {
-      dispatch(UPDATE_FIXEDPROP, value)
+    updateFixedprop ({ commit }, value) {
+      commit(UPDATE_FIXEDPROP, value)
     }
   },
   mutations: {
-    [UPDATE_DRAWER]: (state, value) => {
+    [UPDATE_DRAWER] (state, value) {
       if (value !== undefined) {
         state.drawer = value
       }
     },
-    [UPDATE_MINIVARIANT]: (state, value) => {
+    [UPDATE_MINIVARIANT] (state, value) {
       if (value !== undefined) {
         state.miniVariant = value
       }
     },
-    [UPDATE_CLIPPED]: (state, value) => {
+    [UPDATE_CLIPPED] (state, value) {
       if (value !== undefined) {
         state.clipped = value
       }
     },
-    [UPDATE_FIXEDPROP]: (state, value) => {
+    [UPDATE_FIXEDPROP] (state, value) {
       if (value !== undefined) {
         state.fixedProp = value
       }
