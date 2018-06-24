@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <navbar-comp></navbar-comp>
-
+  <v-app>
     <drawer-comp></drawer-comp>
 
-    <div id="content-wrapper">
+    <navbar-comp></navbar-comp>
+
+    <v-content>
       <router-view></router-view>
-    </div>
+    </v-content>
 
     <footer-comp></footer-comp>
-  </div>
+  </v-app>
 </template>
 
 <script>

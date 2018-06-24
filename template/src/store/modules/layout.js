@@ -13,7 +13,7 @@ const layoutStore = {
     title: 'PWA + Vuex Starter',
     menuItems: [
       {
-        icon: 'settings',
+        icon: 'dashboard',
         title: 'Dashboard',
         url: '/'
       },
