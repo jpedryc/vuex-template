@@ -10,11 +10,17 @@
 
 ## Usage
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ or [yarn](https://yarnpkg.com) for a more efficient dependency tree.**
+This is a fork of the project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ or [yarn](https://yarnpkg.com) for a more efficient dependency tree.**
+
+Additional things added by us: 
+ * VUEX integration
+ * Template structure changed based on a more component approach
+ 
+To get the template:
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init vuetifyjs/pwa my-project
+$ vue init younglionsgroup/vuex-template my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -63,21 +69,3 @@ See ["Configuring your Web server to prevent caching"](docs/prevent_caching.md) 
   - Works with one command out of the box:
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```
-
-## Contributing
-
-This project is a modified copy of the [`vue-webpack-boilerplate`](https://github.com/vuejs-templates/webpack) template.
-
-While we welcome contributions from the community, please note that changes to configuration that is shared between this project and `vue-webpack-boilerplate` should be made against `vue-webpack-boilerplate` *first*.
-
-Once the [upstream](https://stackoverflow.com/a/2739476/385997) PR is merged, please file an additional PR against this project making the equivalent changes. This will help ensure that the shared configuration does not diverge too much.
-
-Any changes that are specific to this project—related to service workers, or other PWA functionality—do not need an equivalent upstream PR.
